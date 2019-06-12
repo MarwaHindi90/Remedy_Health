@@ -1,0 +1,466 @@
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+
+/*   01 - Index Page Styles                  */
+/*   02 - About Page Styles   		       */
+/*   03 - Srevices Page Styles   		   */
+/*   04 - Our_serv1 Page Styles   		   */
+/*   05 - Customers Page Styles             */
+/*   06 - Order Page Styles                */
+/*   07 - Contact Page Styles              */
+/*   08 - 404 Page Styles              */
+
+/* ------------------------------------------ */
+
+/*   01 - Index Styles                  */
+
+a{
+    font-weight: 400;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	text-decoration: none;
+	o-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+a{
+	text-decoration: none;
+	o-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'DinNextLight';
+}
+   @font-face {
+    font-family: 'DinNextLight';
+    src: url('../fonts/din-next/light/DinNextLight.eot');
+    src: url('../fonts/din-next/light/DinNextLight.eot') format('embedded-opentype'), url('fonts/din-next/light/DinNextLight.woff2') format('woff2'), url('fonts/din-next/light/DinNextLight.woff') format('woff'), url('fonts/din-next/light/DinNextLight.ttf') format('truetype'), url('fonts/din-next/light/DinNextLight.svg#DinNextLight') format('svg');
+}
+@font-face {
+    font-family: 'DinNextRegular';
+    src: url('../fonts/din-next/regular/DinNextRegular.eot');
+    src: url('../fonts/din-next/regular/DinNextRegular.eot') format('embedded-opentype'), url('fonts/din-next/regular/DinNextRegular.woff2') format('woff2'), url('fonts/din-next/regular/DinNextRegular.woff') format('woff'), url('fonts/din-next/regular/DinNextRegular.ttf') format('truetype'), url('fonts/din-next/regular/DinNextRegular.svg#DinNextRegular') format('svg');
+}
+@font-face {
+    font-family: 'DinNextMedium';
+    src: url('../fonts/din-next/medium/DinNextMedium.eot');
+    src: url('../fonts/din-next/medium/DinNextMedium.eot') format('embedded-opentype'), url('fonts/din-next/medium/DinNextMedium.woff2') format('woff2'), url('fonts/din-next/medium/DinNextMedium.woff') format('woff'), url('fonts/din-next/medium/DinNextMedium.ttf') format('truetype'), url('fonts/din-next/medium/DinNextMedium.svg#DinNextMedium') format('svg');
+}
+@font-face {
+    font-family: 'DinNextBold';
+    src: url('../fonts/din-next/bold/DinNextBold.eot');
+    src: url('../fonts/din-next/bold/DinNextBold.eot') format('embedded-opentype'), url('fonts/din-next/bold/DinNextBold.woff2') format('woff2'), url('fonts/din-next/bold/DinNextBold.woff') format('woff'), url('fonts/din-next/bold/DinNextBold.ttf') format('truetype'), url('fonts/din-next/bold/DinNextBold.svg#DinNextBold') format('svg');
+}
+
+/*=======================================*/
+
+.navbar .navbar-brand img {
+    max-width: 90%;
+    
+}
+@media (max-width: 778px) {
+    .navbar-brand
+	{
+		width:70%;
+	}
+	
+}
+
+.navbar .nav-item .nav-link {
+    color: #223645;
+    font-size: 18px;
+    font-family: 'DinNextMedium';
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #3fb593
+}
+
+h1, h2, h3, h4, h5, h6{ 
+	font-family: 'DinNextBold' !important;
+}
+
+/* =========================================================================================*/
+.slider .carousel-inner {
+    position: relative
+}
+.slider .carousel-item .carousel-caption {
+    transform: translateY(-4%);
+}
+.slider .carousel-item .carousel-caption img {
+    max-width: 70%;
+}
+.slider .carousel-item .carousel-caption p {
+    color: #223645;
+    font-size: 18px;
+    font-weight: 600
+}
+.slider .carousel-item .carousel-caption a{
+   background-color: #3fb593;
+    border-radius: 40px;
+    padding: 8px 18px;
+    margin-bottom: 20px;
+}
+.slider .carousel-item .carousel-caption a:hover{
+    background-color: #0f6049;
+}
+
+.slider .carousel-indicators li {
+    height: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #3fb593;
+    border-radius: 10px;
+}
+.slider .carousel-indicators li.active {
+    background-color: #3fb593
+}
+
+/* ===========================================================================================*/
+/* Section About */ 
+.about,
+.job  {
+    padding: 80px 0;
+}
+.about span,
+.accreditation span,
+.job span,
+.subscribe span,
+.partners span {
+    color: #3fb593;
+    font-size: 30px;
+    font-family: 'DinNextRegular'
+}
+.about p,
+.accreditation p ,
+.news p,
+.values p ,
+.sale p {
+    color: #223645;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 600;
+}
+.about a, 
+.accreditation a,
+.news .news_link{
+   background-color: #3fb593;
+    border-radius: 40px;
+    padding: 8px 18px;
+    font-size: 20px;
+    text-align: center
+}
+.about a:hover, 
+.accreditation a:hover{
+    background-color: #0f6049;
+}
+
+.about .box{
+    transition: all .2s ease-in-out;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.about .box:hover {
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translateY(-10px);
+    box-shadow: 0 25px 25px rgba(3, 3, 3, 0.20);
+}
+.about .box  h4 {
+    margin: 8px 0;
+    font-family: 'DinNextMedium' !important;
+}
+.accreditation {
+    padding: 80px 0;
+    background-color: #f4f9fc
+}
+.job .card {
+    position: relative
+}
+.job .card .card-body {
+    position: absolute;
+    top: 63%;
+    left: 4%;
+    background-color: #f4f9fc;
+    color: #333;
+    width: 20rem;
+}
+.job .card-text {
+    ;
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 600;
+}
+.job .card-title {
+    font-family: 'DinNextMedium' !important;
+    font-weight: 500
+}
+.subscribe {
+    padding: 80px 0;
+    margin-top: 100px;
+    background: url(../img/subscribepic.png) no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    min-height: 700px;
+}
+.subscribe .wedgit {
+    background-color: #FFF;
+    padding: 25px 40px;
+    transform: translateX(111%)
+}
+.subscribe p {
+    color: #223645;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 600
+}
+.subscribe .form-group {
+    position: relative
+}
+.subscribe .form-group .form-control {
+    background-color: #f4f9fc;
+    padding: 20px ;
+    border-radius: 40px;
+    border: 0;
+    
+}
+.subscribe .form-group .butn{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background-color: #3fb593;
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: 0;
+    font-size: 18px;
+    cursor: pointer;
+ 
+}
+
+.partners-carousel .owl-theme .owl-nav {
+    position: relative;  
+    margin-top: 0; 
+}
+}
+.item img{
+    width: 100% !important;
+    display: inline-block !important;
+}
+
+.owl-theme .owl-dots .owl-dot span ,.owl-theme .owl-nav{
+    display: none;  
+}
+/*====================================================================*/
+/*   02 - About Us page Styles          */
+
+.header {
+    background: url(../img/bradcrump.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 300px;
+    position: relative
+}
+.header .info {
+    position: absolute;
+    transform: translate(0%,110%);
+    color: #223645
+}
+
+.header .info h1 {
+    font-weight: 700;
+}
+
+.header .info span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center
+}
+
+.header .breadcrumb {
+    position: absolute;
+    bottom: -5px;
+   
+}
+.header .breadcrumb li, 
+.header .breadcrumb li a {
+    color: #223645;
+    font-size: 18px;
+    font-weight: 700;
+}
+.header .breadcrumb .active {color: #3fb593}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #223645;
+    content: "|";
+}
+.about .colorr{
+    color: #3fb593
+}
+.about .about_text {
+    color: #223645;
+}
+.services {
+    background: url(../img/servicesbg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 30px 0
+}
+.services .about_text {
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'DinNextRegular'
+}
+
+.services .box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.services .box  h5 {
+    margin: 8px 0;
+    font-family: 'DinNextMedium' !important;
+}
+.services img {
+    max-width: 30%;
+}
+/*====================================================================*/
+
+.sale {
+    background-color: #f4f9fc;
+}
+
+.news {
+    padding: 120px 0 0;
+}
+.news span {
+    font-size: 18px;
+    color: #223645;
+    font-family: 'DinNextRegular'
+    
+}
+
+.news .card-body {
+    background-color: #f4f9fc;
+    padding: 40px;
+}
+.news .card-body .fas {
+    color: #3fb593;
+}
+
+.form_content {
+    padding: 40px 80px;
+    background-color: #eee
+}
+
+
+
+
+
+
+/*====== Footer ===========*/
+.footer {
+    padding: 30px 0 ;
+    background-color: #3fb593;
+}
+.logo-footer img {
+    max-width: 70%
+}
+
+.logo-footer, 
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    border: 1px solid #223645;
+    margin: 10px 5px;
+    color: #223645;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social-media a:hover {
+    background: #223645;
+    border: 1px solid #223645;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer h2 {
+    font-family: 'DinNextMedium' !important;
+}
+.head-border:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #FFF;
+    margin: 5px 0;
+}
+.footer li a {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'DinNextMedium'
+}
+.footer li a.active {
+    color: #223645
+}
+
+@media (max-width: 778px) {
+    .logo-footer img {
+    width: 70%
+}
+}
+/*==========================================================================================*/
+
+/* =============================================================================================*/
+
+/* =============================================================================================*/
+/*   customer Styles         */
+
+
+/*================================*/
+#scroll-top {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #223645;
+    text-align: center;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+    padding: 3px 0;
+    border-radius: 20% 20% 0 0;
+}
+
+
+
+
+
+
+
