@@ -75,10 +75,13 @@ $('body').scrollspy({target: "#main-nav", offset: 50});
     rtl:false,
     loop:true,
     autoplay:true,
-    nav:false,
+    nav:true,
     dots:false,
     margin:10,
     responsiveClass:true,
+        navText: ["<span class='carousel-nav-left'><i class='fa fa-chevron-left'></i></span>","<span class='carousel-nav-right'><i class='fa fa-chevron-right'></i></span>"],
+					paginationSpeed: 300,
+					rewindSpeed: 400, 
     responsive:{
         0:{
             items:1,
