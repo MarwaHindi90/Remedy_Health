@@ -47,16 +47,36 @@
 $('body').scrollspy({target: "#main-nav", offset: 50});
 
 
+// Slider
 
+    $('.slider-carousel').owlCarousel({
+        rtl:false,
+        loop:true,
+        center:true,
+        nav:false,
+        dots:true,
+        autoplay:false,
+        margin:10,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
 
-
-
-    
+    // Partners-carousel
     $('.partners-carousel').owlCarousel({
     rtl:false,
     loop:true,
     autoplay:true,
     nav:false,
+    dots:false,
     margin:10,
     responsiveClass:true,
     responsive:{

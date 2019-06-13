@@ -3,7 +3,7 @@
 /* ------------------------------------------ */
 
 /*   01 - Index Page Styles                  */
-/*   02 - About Page Styles   		       */
+/*   02 - About Us page Styles  		       */
 /*   03 - Srevices Page Styles   		   */
 /*   04 - Our_serv1 Page Styles   		   */
 /*   05 - Customers Page Styles             */
@@ -63,7 +63,8 @@ body {
 }
 
 /*=======================================*/
-
+/*   01 - Index Page Styles                  */
+/* Navbar */
 .navbar .navbar-brand img {
     max-width: 90%;
     
@@ -73,65 +74,104 @@ body {
 	{
 		width:70%;
 	}
-	
 }
-
 .navbar .nav-item .nav-link {
     color: #223645;
     font-size: 18px;
     font-family: 'DinNextMedium';
 }
-
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #3fb593
 }
-
 h1, h2, h3, h4, h5, h6{ 
 	font-family: 'DinNextBold' !important;
 }
-
 /* =========================================================================================*/
-.slider .carousel-inner {
-    position: relative
-}
-.slider .carousel-item .carousel-caption {
-    transform: translateY(-4%);
-}
-.slider .carousel-item .carousel-caption img {
-    max-width: 70%;
-}
-.slider .carousel-item .carousel-caption p {
-    color: #223645;
-    font-size: 18px;
-    font-weight: 600
-}
-.slider .carousel-item .carousel-caption a{
-   background-color: #3fb593;
-    border-radius: 40px;
-    padding: 8px 18px;
-    margin-bottom: 20px;
-}
-.slider .carousel-item .carousel-caption a:hover{
-    background-color: #0f6049;
-}
+/*   Slider    */
 
-.slider .carousel-indicators li {
+.img-caption {
+    max-width: 70% !important;
+}
+.slider-carousel .owl-carousel .owl-theme .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.slider-desc {
+    position: absolute;
+    left: 3%;
+    top: 18%;
+    z-index: 99;
+    width: 100%;
+}
+.slider-desc p{
+	color: #223645;
+    font-size: 18px;
+    font-weight: 600;
+}
+.custom-btn {
+    background-color: #3fb593;
+    border-radius: 30px;
+    padding: .4rem 1.5rem;
+    font-size: 20px;
+}
+.custom-btn:hover{
+	background: #223645;
+}
+.slider-carousel .owl-dots {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+.slider-carousel .owl-dots .owl-dot span {
     height: 15px;
     background-color: transparent;
     cursor: pointer;
     border: 1px solid #3fb593;
     border-radius: 10px;
+    width: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.slider .carousel-indicators li.active {
-    background-color: #3fb593
+.slider-carousel .owl-dots .owl-dot.active span, .slider-carousel .owl-dots .owl-dot:hover span {
+    background: #3fb593;
 }
-
+.slider-carousel .owl-dot{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+button:focus {
+    outline: none !important;
+}
+@media (max-width: 778px) {
+    .img-caption {
+        max-width: 40% !important;
+    }
+	.slider-desc {
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        z-index: 99;
+        width: 100%;
+    }
+    .slider-desc p{
+        color: #223645;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 10px 0 !important;
+    }
+    .custom-btn {
+        background-color: #3fb593;
+        border-radius: 30px;
+        padding: .4rem 1.5rem;
+        font-size: 12px;
+    }
+    .slider-carousel .owl-dots {
+        display: none
+    }
+}
 /* ===========================================================================================*/
-/* Section About */ 
-.about,
-.job  {
-    padding: 80px 0;
-}
+/* Section About && Grouping Style Pages */ 
 .about span,
 .accreditation span,
 .job span,
@@ -145,7 +185,8 @@ h1, h2, h3, h4, h5, h6{
 .accreditation p ,
 .news p,
 .values p ,
-.sale p {
+.sale p 
+{
     color: #223645;
     font-size: 18px;
     line-height: 2;
@@ -164,13 +205,11 @@ h1, h2, h3, h4, h5, h6{
 .accreditation a:hover{
     background-color: #0f6049;
 }
-
 .about .box{
     transition: all .2s ease-in-out;
     padding: 10px;
     margin-bottom: 20px;
 }
-
 .about .box:hover {
     background-color: #fff;
     border-radius: 10px;
@@ -182,19 +221,20 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'DinNextMedium' !important;
 }
 .accreditation {
-    padding: 80px 0;
+    padding: 40px 0;
     background-color: #f4f9fc
 }
+/* Job Section */
+
 .job .card {
-    position: relative
+    border: 0
+/*    position: relative*/
 }
 .job .card .card-body {
-    position: absolute;
-    top: 63%;
-    left: 4%;
+   margin-top: -27%;
     background-color: #f4f9fc;
     color: #333;
-    width: 20rem;
+/*    width: 20rem;*/
 }
 .job .card-text {
     ;
@@ -206,20 +246,20 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'DinNextMedium' !important;
     font-weight: 500
 }
+/* Subscribe Section */
 .subscribe {
-    padding: 80px 0;
-    margin-top: 100px;
+/*    padding: 80px 0;*/
     background: url(../img/subscribepic.png) no-repeat center center;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    min-height: 700px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 550px;
 }
 .subscribe .wedgit {
     background-color: #FFF;
     padding: 25px 40px;
-    transform: translateX(111%)
+    margin-top: 10%
 }
 .subscribe p {
     color: #223645;
@@ -234,8 +274,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: #f4f9fc;
     padding: 20px ;
     border-radius: 40px;
-    border: 0;
-    
+    border: 0;  
 }
 .subscribe .form-group .butn{
     position: absolute;
@@ -247,22 +286,20 @@ h1, h2, h3, h4, h5, h6{
     border: 0;
     font-size: 18px;
     cursor: pointer;
- 
 }
-
+/* Partners Section */
 .partners-carousel .owl-theme .owl-nav {
     position: relative;  
     margin-top: 0; 
 }
-}
-.item img{
+.partners-carousel .item img{
     width: 100% !important;
     display: inline-block !important;
 }
-
-.owl-theme .owl-dots .owl-dot span ,.owl-theme .owl-nav{
+.partners-carousel .owl-theme .owl-dots .owl-dot span ,.owl-theme .owl-nav{
     display: none;  
 }
+
 /*====================================================================*/
 /*   02 - About Us page Styles          */
 
@@ -348,7 +385,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .news {
-    padding: 120px 0 0;
+    padding: 80px 0 0 ;
 }
 .news span {
     font-size: 18px;
@@ -359,7 +396,7 @@ h1, h2, h3, h4, h5, h6{
 
 .news .card-body {
     background-color: #f4f9fc;
-    padding: 40px;
+    padding: 30px;
 }
 .news .card-body .fas {
     color: #3fb593;
@@ -367,13 +404,59 @@ h1, h2, h3, h4, h5, h6{
 
 .form_content {
     padding: 40px 80px;
-    background-color: #eee
+    background-color: rgba(238, 238, 238, 0.6);
+    font-family: 'DinNextRegular'
 }
 
+.form_content input[type="text"], 
+.form_content 
+input[type="email"] {
+    background: #fff;
+    color: #333;
+    padding: 15px;
+    border: 1px solid #223645;
+}
+.input-group>.input-group-append>.btn {
+    background-color: #3fb593;
+}
 
+.form_content .bttn_form ,.connect_form .bttn_form
+{
+    background-color: #3fb593;
+    border-radius: 30px;
+    padding: .5rem 1.8rem;
+    font-size: 20px;
+    border: 0;
+    text-align: center
+}
 
+/* ====  */
+.connect_form
+input[type="text"], 
+.connect_form
+input[type="email"] {
+ 
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #223645;
+}
+.connect_form label {
+    font-weight: bold;
+    color: #223645;
+    font-size: 18px;
+    font-family: 'DinNextRegular'
+}
 
-
+.connect-info .text{
+	color: #223645;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 600;
+}
+.connect-info p{
+	font-size: 18px;
+    font-weight: bold;
+}
 
 /*====== Footer ===========*/
 .footer {
@@ -383,20 +466,19 @@ h1, h2, h3, h4, h5, h6{
 .logo-footer img {
     max-width: 70%
 }
-
 .logo-footer, 
-.social-media{
+.social-media {
     display: flex;
     justify-content: center;
 }
 
 .social-media a {
     border: 1px solid #223645;
-    margin: 10px 5px;
+    margin: 2px 8px;
     color: #223645;
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    line-height: 38px;
     text-align: center;
     border-radius: 50%;
 }
@@ -436,10 +518,6 @@ h1, h2, h3, h4, h5, h6{
 /*==========================================================================================*/
 
 /* =============================================================================================*/
-
-/* =============================================================================================*/
-/*   customer Styles         */
-
 
 /*================================*/
 #scroll-top {
