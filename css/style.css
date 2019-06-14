@@ -138,6 +138,9 @@ h1, h2, h3, h4, h5, h6{
 	margin-left: 5px;
 	margin-right: 5px;
 }
+.slider-carousel .owl-nav   {
+        display: none
+}
 button:focus {
     outline: none !important;
 }
@@ -164,7 +167,7 @@ button:focus {
         padding: .4rem 1.5rem;
         font-size: 12px;
     }
-    .slider-carousel .owl-theme .owl-nav  {
+.slider-carousel .owl-carousel .owl-theme .owl-nav  {
         display: none
     }
 }
@@ -324,6 +327,7 @@ button:focus {
     max-width: 100% !important;
     display: inline-block !important;
 }
+
 .partners-carousel .owl-theme .owl-dots .owl-dot span ,.owl-theme{
     display: none;  
 }
@@ -404,7 +408,7 @@ button:focus {
     font-family: 'DinNextMedium' !important;
 }
 .services img {
-    max-width: 30%;
+    max-width: 100%;
 }
 /*====================================================================*/
 /*   03 - News page Styles          */
@@ -457,6 +461,10 @@ input[type="email"] {
     font-size: 20px;
     border: 0;
     text-align: center
+}
+.form_content .bttn_form:hover ,.connect_form .bttn_form:hover
+{
+    background-color: #223645;
 }
 /* ========================================================= */
 /*   05 - Contact page Styles          */
@@ -556,7 +564,7 @@ input[type="email"] {
     color: #FFF;
     background-color: #223645;
     text-align: center;
-    right: 75px;
+    right: 25px;
     bottom: 200px;
     position: fixed;
     z-index: 9999;
