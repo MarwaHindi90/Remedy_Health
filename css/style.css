@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6{
 button:focus {
     outline: none !important;
 }
-@media (max-width: 778px) {
+@media (max-width: 768px) {
     .img-caption {
         max-width: 40% !important;
     }
@@ -167,7 +167,7 @@ button:focus {
         padding: .4rem 1.5rem;
         font-size: 12px;
     }
-.slider-carousel .owl-carousel .owl-theme .owl-nav  {
+    .slider-carousel .owl-dots {
         display: none
     }
 }
